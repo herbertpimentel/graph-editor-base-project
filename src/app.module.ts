@@ -26,6 +26,9 @@ import { GeneratedApiModule } from './resources/generated/api';
     UsersModule,
     ProcessosModule,
     GeneratedApiModule,
+
+    // Modules Injected by Graph Editor
+    
   ],
   controllers: [],
   providers: [UserSessionService],
