@@ -25,7 +25,7 @@ async function bootstrap() {
 
   app.useGlobalFilters(new GlobalExceptionsFilter(app.get(HttpAdapterHost)));
 
-  await app.listen(process.env.PORT ?? 4000);
+  await app.listen(process.env.PORT ?? 4001);
 }
 
 bootstrap();
