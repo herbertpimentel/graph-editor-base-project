@@ -23,7 +23,8 @@ import * as schema from './database-schema';
       schema: schema,
     }),
     UsersModule,
-    // GeneratedApiModule,
+
+    // Modules Injected by Graph Editor
   ],
   controllers: [],
   providers: [UserSessionService],
