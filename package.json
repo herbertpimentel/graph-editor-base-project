@@ -34,6 +34,7 @@
     "dotenv": "^17.3.1",
     "drizzle-orm": "^0.45.2",
     "lodash": "^4.17.23",
+    "mysql2": "^3.23.2",
     "passport": "^0.7.0",
     "passport-jwt": "^4.0.1",
     "passport-local": "^1.0.0",
