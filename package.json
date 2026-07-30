@@ -32,7 +32,7 @@
     "class-validator": "^0.14.4",
     "date-fns": "^4.1.0",
     "dotenv": "^17.3.1",
-    "drizzle-orm": "^0.45.2",
+    "drizzle-orm": "1.0.0-rc.4",
     "lodash": "^4.17.23",
     "mysql2": "^3.23.2",
     "passport": "^0.7.0",
