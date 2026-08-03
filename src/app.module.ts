@@ -1,5 +1,6 @@
 import { MiddlewareConsumer, Module, RequestMethod } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
+import { ScheduleModule } from '@nestjs/schedule';
 
 import { DatabaseModule } from './modules/database/database.module';
 
@@ -12,11 +13,13 @@ import { UserSessionService } from './user-session.service';
 import { DATABASE } from './constants';
 
 import * as schema from './database-schema';
+import { GRAPH_EDITOR_MODULES } from './modules';
 // import { GeneratedApiModule } from './resources/generated/api';
 
 @Module({
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
+    ScheduleModule.forRoot(),
     AuthModule.forRoot({ serviceClass: UserSessionService }),
     DatabaseModule.forRoot({
       databaseName: DATABASE,
