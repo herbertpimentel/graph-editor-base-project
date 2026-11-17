@@ -7,9 +7,6 @@ import { AuthModule } from './modules/auth/auth.module';
 import { UserIdentificationMiddleware } from './modules/auth/user-identification.middleware';
 import { UserSessionService } from './user-session.service';
 
-import * as schema from './database-schema';
-import { GRAPH_EDITOR_MODULES } from './modules';
-
 @Module({
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
